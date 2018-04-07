@@ -10,6 +10,7 @@ import { QuizPageComponent } from './quiz-page/quiz-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { Bootstrap } from 'bootstrap';
+import { FormsModule } from '@angular/forms';
 import { FriendsComponent } from './friends/friends.component';
 import { FamilyComponent } from './family/family.component';
 import { FormsModule } from '@angular/forms';
