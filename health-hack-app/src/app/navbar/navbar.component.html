@@ -1,14 +1,18 @@
 <div id="sidebar" class="item item-1">
   <div class="sidebar-header">
       <div class="text-center">
-          <img src="../assets/workSpotsLogo.png">
       </div>
   </div>
-  <hr>
   <br>
-  <img width="200px" alt="Trophy" src="./assets/shortcut.jpg">
-  <a class="btn btn-default btn-block btn-outline-secondary" (click)='findPage()'><i class="fas fa-search"></i>&nbsp;&nbsp;Find</a>
-  <a class="btn btn-default btn-block btn-outline-secondary" (click)='listPage()'><i class="far fa-list-alt"></i>&nbsp;&nbsp;List&nbsp;</a>
-  <a class="btn btn-default btn-block btn-outline-secondary" (click)='mapPage()'><i class="far fa-map"></i>&nbsp;&nbsp;Map</a>
+  <p class="text-center welcome">Welcome, Neil!</p>
+  <img class="trophy" width="200px" alt="Trophy" src="./assets/shortcut.jpg">
+  <p class="text-center score">Current Score: </p>
+  <p class="text-center welcome"><strong>450</strong> </p>
+  <div class="btn-container">
+  <a class="half-btn btn btn-default btn-block btn-outline-secondary col-sm-6" (click)='findPage()'><i class="fas fa-search"></i>&nbsp;&nbsp;Friends</a>
+  <a class="half-btn btn btn-default btn-block btn-outline-secondary col-sm-12" (click)='listPage()'><i class="far fa-list-alt"></i>&nbsp;&nbsp;Family&nbsp;</a>
+ </div>
+ <a class="full-btn btn btn-success btn-block btn-lg btn-outline-secondary col-sm-12" (click)='mapPage()'><i class="far fa-map"></i>&nbsp;&nbsp;Go to my learning</a>
+
 </div>
 
