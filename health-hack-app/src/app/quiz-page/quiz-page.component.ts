@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { QuizScore } from '../services/quiz.service';
+import { Notifications } from '../services/notifications.service';
 
 @Component({
   selector: 'app-quiz-page',
@@ -52,7 +53,7 @@ export class QuizPageComponent implements OnInit {
       this.correctAnswers--;
     }
     this.score = 100 * (this.correctAnswers / 8);
-    alert('You scored ' + this.score + '% on this quiz! Would you like to share this information?');
+    confirm('You scored ' + this.score + '% on this quiz! Would you like to share this information?');
     this.quizScore.setScore(this.score);
     this.router.navigate(['/app-home-page']);
   }

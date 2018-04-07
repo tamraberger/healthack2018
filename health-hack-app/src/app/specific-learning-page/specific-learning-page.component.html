@@ -2,33 +2,33 @@
   <h1>Heart Learning</h1>
   <br>
   <table>
-    <thead>
-      <td>Resource</td>
-      <td>Quiz</td>
-      <td *ngIf='quizScore'>{{quizScore}}</td>
-      <td *ngIf='!quizScore'>Quiz Score</td>
-    </thead>
-    <tr>
-      <td><a>Resource</a></td>
-      <td><a>Quiz</a></td>
-      <td>50%</td>
+    <tr class='social-container'>
+      <th>Resource</th>
+      <th>Quiz</th>
+      <th>Quiz Score</th>
     </tr>
-    <tr>
+    <tr class='social-container'>
       <td><a>Resource</a></td>
-      <td><a>Quiz</a></td>
-      <td>100%</td>
+      <td><a routerLink='/app-quiz-page'>Quiz</a></td>
+      <td *ngIf='score || score === 0'>{{score}}%</td>
+      <td *ngIf='!score && score !== 0'>N/A</td>
     </tr>
-    <tr>
+    <tr class='social-container'>
       <td><a>Resource</a></td>
       <td><a>Quiz</a></td>
       <td>100%</td>
     </tr>
-    <tr>
+    <tr class='social-container'>
+      <td><a>Resource</a></td>
+      <td><a>Quiz</a></td>
+      <td>100%</td>
+    </tr>
+    <tr class='social-container'>
       <td><a>Resource</a></td>
       <td><a>Quiz</a></td>
       <td>87.5%</td>
     </tr>
-    <tr>
+    <tr class='social-container'>
       <td><a>Resource</a></td>
       <td><a>Quiz</a></td>
       <td>75%</td>

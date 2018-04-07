@@ -8,7 +8,11 @@ import { QuizScore } from '../services/quiz.service';
 })
 export class SpecificLearningPageComponent implements OnInit {
 
-  constructor(private quizScore: QuizScore) { this.quizScore = quizScore; }
+  score: number;
+
+  constructor(private quizScore: QuizScore) {
+    this.score = quizScore.getScore();
+  }
 
   ngOnInit() {
   }

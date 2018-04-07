@@ -21,9 +21,6 @@
 .score {
   font-size: 20px;
 }
-#sidebar a {
-    color: gray;
-}
 
 #sidebar a:active {
     color: white;
@@ -63,8 +60,8 @@ hr {
 }
 
 .full-btn {
-font-size: medium;
-
+    font-size: medium;
+    color: white;
 }
 
 
