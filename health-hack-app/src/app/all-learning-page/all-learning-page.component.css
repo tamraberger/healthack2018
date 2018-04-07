@@ -1,44 +1,19 @@
-.learning-categories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-}
-
 .category {
-  width: 240px;
-  height: 317px;
+  width: 260px;
+  height: 350px;
   border: grey 1px solid;
   margin: 10px;
+  background-color: #E1F5FE;
+  text-align: center;
 }
 
 .category-image {
   width: 150px;
   height: 150px;
-  margin-left: 45px;
-  margin-right: 45px;
-}
-
-.category-body {
-  width: 238px;
-  height: 165px;
-  border-top: grey 1px solid;
-  background-color: #B3E5FC;
-}
-
-.category-title {
-  width: 240px;
-  margin-top: 5px;
-  text-align: center;
-}
-
-.category-text {
-  text-align: center;
 }
 
 .btn {
   width: 130px;
-  margin-left: 55px;
-  margin-right: 55px;
 }
 
 
