@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuizScore } from '../services/quiz.service';
 
 @Component({
   selector: 'app-specific-learning-page',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpecificLearningPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private quizScore: QuizScore) { this.quizScore = quizScore; }
 
   ngOnInit() {
   }

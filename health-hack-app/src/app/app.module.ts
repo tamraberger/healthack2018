@@ -13,7 +13,11 @@ import { Bootstrap } from 'bootstrap';
 import { FormsModule } from '@angular/forms';
 import { FriendsComponent } from './friends/friends.component';
 import { FamilyComponent } from './family/family.component';
+<<<<<<< HEAD
 import { FormsModule } from '@angular/forms';
+=======
+import { QuizScore } from './services/quiz.service';
+>>>>>>> 1a38d4df4695bb98b9911f20b036159ef1a119bd
 
 const appRoutes: Routes = [
   { path: 'app-home-page',
@@ -57,7 +61,7 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [QuizScore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

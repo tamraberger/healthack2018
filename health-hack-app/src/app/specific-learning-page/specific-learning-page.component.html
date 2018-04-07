@@ -1,3 +1,37 @@
-<p>
-  specific-learning-page works!
-</p>
+<div class='nav-spacing'>
+  <h1>Heart Learning</h1>
+  <br>
+  <table>
+    <thead>
+      <td>Resource</td>
+      <td>Quiz</td>
+      <td *ngIf='quizScore'>{{quizScore}}</td>
+      <td *ngIf='!quizScore'>Quiz Score</td>
+    </thead>
+    <tr>
+      <td><a>Resource</a></td>
+      <td><a>Quiz</a></td>
+      <td>50%</td>
+    </tr>
+    <tr>
+      <td><a>Resource</a></td>
+      <td><a>Quiz</a></td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td><a>Resource</a></td>
+      <td><a>Quiz</a></td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td><a>Resource</a></td>
+      <td><a>Quiz</a></td>
+      <td>87.5%</td>
+    </tr>
+    <tr>
+      <td><a>Resource</a></td>
+      <td><a>Quiz</a></td>
+      <td>75%</td>
+    </tr>
+  </table>
+</div>
