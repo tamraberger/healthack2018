@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #E1F5FE;
+  font-family: 'Playfair Display', serif;
+}
+.nav-spacing {
+  margin-left: 300px;
+}
+.social-container {
+  display: flex;
+}
+
+.friend {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.page-titling {
+  align-content: center;
+  text-align: center;
+  background-color: #03A9F4;
+  width: 50%;
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  color: #ffffff;
+  padding: 14px 20px 14px 20px;
+  text-decoration: none;
+}
