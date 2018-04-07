@@ -2,3 +2,7 @@ body {
   background-color: #E1F5FE;
   font-family: 'Playfair Display', serif;
 }
+
+.nav-spacing {
+  margin-left: 300px;
+}
