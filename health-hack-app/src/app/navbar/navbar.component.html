@@ -9,10 +9,10 @@
   <p class="text-center score">Current Score: </p>
   <p class="text-center welcome"><strong>450</strong> </p>
   <div class="btn-container">
-  <a class="half-btn btn btn-default btn-block btn-outline-secondary col-sm-6" (click)='findPage()'><i class="fas fa-search"></i>&nbsp;&nbsp;Friends</a>
-  <a class="half-btn btn btn-default btn-block btn-outline-secondary col-sm-12" (click)='listPage()'><i class="far fa-list-alt"></i>&nbsp;&nbsp;Family&nbsp;</a>
+  <a class="half-btn btn btn-default btn-block btn-outline-secondary col-sm-6" routerLink="/app-family"><i class="fas fa-search"></i>&nbsp;&nbsp;Family</a>
+  <a class="half-btn btn btn-default btn-block btn-outline-secondary col-sm-12" routerLink="/app-friends"><i class="far fa-list-alt"></i>&nbsp;&nbsp;Friends</a>
  </div>
- <a class="full-btn btn btn-success btn-block btn-lg btn-outline-secondary col-sm-12" (click)='mapPage()'><i class="far fa-map"></i>&nbsp;&nbsp;Go to my learning</a>
+ <a class="full-btn btn btn-success btn-block btn-lg btn-outline-secondary col-sm-12" routerLink="app-all-learning-page"><i class="far fa-map"></i>&nbsp;&nbsp;Go to my learning</a>
 
 </div>
 

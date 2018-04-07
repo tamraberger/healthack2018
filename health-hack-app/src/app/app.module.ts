@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -9,8 +9,9 @@ import { SpecificLearningPageComponent } from './specific-learning-page/specific
 import { QuizPageComponent } from './quiz-page/quiz-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
-import { FriendsAndFamiliyViewComponent } from './friends-and-familiy-view/friends-and-familiy-view.component';
 import { Bootstrap } from 'bootstrap';
+import { FriendsComponent } from './friends/friends.component';
+import { FamilyComponent } from './family/family.component';
 
 const appRoutes: Routes = [
   { path: 'app-home-page',
@@ -28,7 +29,13 @@ const appRoutes: Routes = [
   { path: 'app-specific-learning-page',
     component: SpecificLearningPageComponent
   },
-  { path: '', redirectTo: '/app-home-page', pathMatch: 'full' }
+  { path: 'app-family',
+     component: FamilyComponent
+  },
+  { path: 'app-friends',
+  component: FriendsComponent
+},
+  { path: '', redirectTo: '/app-home-page', pathMatch: 'full' },
 ];
 
 @NgModule({
@@ -40,7 +47,8 @@ const appRoutes: Routes = [
     QuizPageComponent,
     NavbarComponent,
     ProfilePageComponent,
-    FriendsAndFamiliyViewComponent
+    FriendsComponent,
+    FamilyComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
