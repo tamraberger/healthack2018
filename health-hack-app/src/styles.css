@@ -25,9 +25,11 @@ body {
 }
 
 .flex-container {
+
   display: flex;
   flex-direction: row;
   justify-content: start;
+  flex-wrap: wrap;
 }
 
 
@@ -36,6 +38,7 @@ body {
 
   margin:10px;
   background-color: #E1F5FE;
+  max-width: 225px;
 }
 
 .image{
