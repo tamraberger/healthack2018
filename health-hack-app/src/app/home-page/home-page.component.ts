@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
+import { QuizScore } from '../services/quiz.service';
 
 @Component({
   selector: 'app-home-page',

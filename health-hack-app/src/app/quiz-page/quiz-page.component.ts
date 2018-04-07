@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { QuizScore } from '../services/quiz.service';
 
 @Component({
   selector: 'app-quiz-page',
@@ -19,7 +20,7 @@ export class QuizPageComponent implements OnInit {
   q7: number;
   q8: number;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private quizScore: QuizScore) { this.quizScore = quizScore; }
 
   ngOnInit() {
   }
@@ -52,6 +53,7 @@ export class QuizPageComponent implements OnInit {
     }
     this.score = 100 * (this.correctAnswers / 8);
     alert('You scored ' + this.score + '% on this quiz! Would you like to share this information?');
+    this.quizScore.setScore(this.score);
     this.router.navigate(['/app-home-page']);
   }
 
