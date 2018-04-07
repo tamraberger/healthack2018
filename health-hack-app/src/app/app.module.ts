@@ -12,6 +12,7 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { Bootstrap } from 'bootstrap';
 import { FriendsComponent } from './friends/friends.component';
 import { FamilyComponent } from './family/family.component';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: 'app-home-page',
