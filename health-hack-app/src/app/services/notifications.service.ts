@@ -29,7 +29,7 @@ export class Notifications {
   }
 
   addNotification(notification) {
-    this.notifications.push(notification);
+    this.notifications.unshift(notification);
   }
 
 }

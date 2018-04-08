@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
 import { QuizScore } from '../services/quiz.service';
 import { Notifications } from '../services/notifications.service';
+import { PersonalScore } from '../services/score.service';
 
 @Component({
   selector: 'app-quiz-page',
@@ -22,8 +22,8 @@ export class QuizPageComponent implements OnInit {
   q7: number;
   q8: number;
 
-  constructor(private router: Router, private quizScore: QuizScore, private http: HttpClient) { this.quizScore = quizScore;
-  this.http = http; }
+  constructor(private router: Router, private quizScore: QuizScore, private notifications: Notifications,
+  private personalScore: PersonalScore) { this.quizScore = quizScore; }
 
   ngOnInit() {
   }
@@ -49,10 +49,23 @@ export class QuizPageComponent implements OnInit {
       this.correctAnswers--;
     }
     this.score = Math.round(100 * (this.correctAnswers / 6));
-    confirm('You scored ' + this.score + '% on this quiz! Would you like to share this information?');
     this.quizScore.setScore(this.score);
-
-    this.http.get('/send').subscribe(data => {});
+    const date = new Date();
+    const time = date.toDateString();
+    if (confirm('You scored ' + this.score +
+    '% on this quiz! You also won 50 points for taking the quiz! Would you like to share this information?')) {
+      this.notifications.addNotification({
+        img: '<img class="post-img" src="./assets/meep.jpg">',
+        time: '<p class="post-date">' + time + '</p>',
+        html: '<p class="post-message">Meep Berger completed some learning!</p>'
+      });
+    }
+    this.notifications.addNotification({
+      img: '<img class="post-img" src="./assets/meep.jpg">',
+      time: '<p class="post-date">' + time + '</p>',
+      html: '<p class="post-message">Meep Berger completed some learning!</p>'
+    });
+    this.personalScore.addScore(50);
 
     this.router.navigate(['/app-specific-learning-page']);
   }

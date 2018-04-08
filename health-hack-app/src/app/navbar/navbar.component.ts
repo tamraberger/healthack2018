@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PersonalScore } from '../services/score.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  shownScore: number;
+
+  constructor(private score: PersonalScore) {
+    this.shownScore = score.getScore();
+   }
 
   ngOnInit() {
   }
