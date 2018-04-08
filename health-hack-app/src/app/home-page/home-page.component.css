@@ -1,0 +1,31 @@
+.feed-item {
+  width: 100%;
+  background-color: #E1F5FE;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.leader {
+  background-color: #E1F5FE;
+  justify-content: flex-start;
+  margin: 15px;
+  width: 250px;
+  text-align: center;
+}
+
+.leader-image {
+  width: 100px;
+  margin-left: 50px;
+}
+.post-date {
+  font-size: medium;
+}
+
+.post-message {
+  font-size: x-large;
+}
+
+.post-img {
+  height: 100px;
+}

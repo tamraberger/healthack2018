@@ -52,16 +52,20 @@ hr {
 .btn-container {
   display: flex;
 }
+
 .half-btn {
   flex-direction: column;
   margin: 5px;
-
   width: 50%;
 }
 
 .full-btn {
     font-size: medium;
     color: white;
+}
+
+#newsfeedLink {
+  color: black;
 }
 
 
