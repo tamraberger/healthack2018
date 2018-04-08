@@ -46,10 +46,10 @@ export class QuizPageComponent implements OnInit {
     if (this.q6 != 2) {
       this.correctAnswers--;
     }
-    this.score = 100 * (this.correctAnswers / 6);
+    this.score = Math.round(100 * (this.correctAnswers / 6));
     confirm('You scored ' + this.score + '% on this quiz! Would you like to share this information?');
     this.quizScore.setScore(this.score);
-    this.router.navigate(['/app-home-page']);
+    this.router.navigate(['/app-specific-learning-page']);
   }
 
 }
