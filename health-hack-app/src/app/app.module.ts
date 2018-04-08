@@ -17,6 +17,7 @@ import { FamilyComponent } from './family/family.component';
 import { QuizScore } from './services/quiz.service';
 import { PersonalScore } from './services/score.service';
 import { Notifications } from './services/notifications.service';
+import { IllnessLearningPageComponent } from './illness-learning-page/illness-learning-page.component';
 
 const appRoutes: Routes = [
   { path: 'app-home-page',
@@ -34,13 +35,17 @@ const appRoutes: Routes = [
   { path: 'app-specific-learning-page',
     component: SpecificLearningPageComponent
   },
+  { path: 'app-illness-learning-page',
+    component: IllnessLearningPageComponent
+  },
   { path: 'app-family',
      component: FamilyComponent
   },
   { path: 'app-friends',
   component: FriendsComponent
-},
-  { path: '', redirectTo: '/app-home-page', pathMatch: 'full' },
+  },
+  { path: '', redirectTo: '/app-home-page', pathMatch: 'full'
+  }
 ];
 
 @NgModule({
@@ -53,7 +58,8 @@ const appRoutes: Routes = [
     NavbarComponent,
     ProfilePageComponent,
     FriendsComponent,
-    FamilyComponent
+    FamilyComponent,
+    IllnessLearningPageComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

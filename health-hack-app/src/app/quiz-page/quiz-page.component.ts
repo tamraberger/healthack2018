@@ -60,20 +60,20 @@ export class QuizPageComponent implements OnInit {
     this.quizScore.setScore(this.score);
     const date = new Date();
     const time = date.toDateString();
+    this.notifications.addNotification({
+      img: '<img class="post-img" src="./assets/illness.png">',
+      time: '<p class="post-date">' + time + '</p>',
+      html: '<a href="http://localhost:4200/app-all-learning-page" class="post-message">Potential Flu Outbreak! Learn More By Clicking Here</a>'
+    });
     if (confirm('You scored ' + this.score +
-    '% on this quiz! You also won ' + this.addedPoints +
-    ' out of 50 points for taking the quiz! Would you like to share this information?')) {
+      '% on this quiz! You also won ' + this.addedPoints +
+      ' out of 50 points for taking the quiz! Would you like to share this information?')) {
       this.notifications.addNotification({
         img: '<img class="post-img img-thumbnail" src="./assets/Ondrus_Keri.jpg">',
         time: '<p class="post-date">' + time + '</p>',
         html: '<p class="post-message">You completed some learning!</p>'
       });
     }
-    this.notifications.addNotification({
-      img: '<img class="post-img" src="./assets/illness.png">',
-      time: '<p class="post-date">' + time + '</p>',
-      html: '<a href="http://localhost:4200/app-all-learning-page" class="post-message">Potential Flu Outbreak! Learn More By Clicking Here</a>'
-    });
     this.personalScore.addScore(this.addedPoints);
 
     this.router.navigate(['/app-specific-learning-page']);

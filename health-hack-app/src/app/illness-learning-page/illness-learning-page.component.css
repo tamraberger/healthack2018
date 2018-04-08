@@ -1,0 +1,38 @@
+table {
+  color: #333;
+  width: 100%;
+  /*border-collapse: collapse;*/
+  border-radius: 6px;
+  border-spacing: 0;
+  font-size: large;
+  -moz-border-radius:6px;
+}
+
+td, th {
+  height: 80px;
+  transition: all 0.3s;
+}
+
+th {
+  background: #0277BD;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
+/* Cells in even rows (2,4,6...) are one color */
+tr:nth-child(even) td { background: #FEFEFE; }
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */
+tr:nth-child(odd) td { background: #E1F5FE; }
+
+tr td:hover { background: #B3E5FC; }
+/* Hover cell effect! */
+
+.link {
+  color: black;
+}

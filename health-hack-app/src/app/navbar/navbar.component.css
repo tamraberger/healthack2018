@@ -65,7 +65,16 @@ hr {
 }
 
 #newsfeedLink {
+   color: black;
+ }
+
+#medicationslink {
   color: black;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
 }
 
 
