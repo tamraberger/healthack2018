@@ -1,37 +1,43 @@
 <div class='nav-spacing'>
+  <div class="social-container">
   <h1>Heart Learning</h1>
-  <br>
+    <br><br>
   <table>
     <tr class='social-container'>
-      <th>Resource</th>
-      <th>Quiz</th>
+      <th>Learning Resource</th>
+      <th>Quiz Link</th>
       <th>Quiz Score</th>
     </tr>
     <tr class='social-container'>
-      <td><a>Resource</a></td>
-      <td><a routerLink='/app-quiz-page'>Quiz</a></td>
+      <td><a class="link" href="http://www.heart.org/HEARTORG/Conditions/HighBloodPressure/KnowYourNumbers/Understanding-Blood-Pressure-Readings_UCM_301764_Article.jsp?appName=WebApp"
+             target="_blank">Understanding Blood Pressure Readings</a></td>
+      <td><a class="btn btn-primary" routerLink='/app-quiz-page'>Take the Quiz</a></td>
       <td *ngIf='score || score === 0'>{{score}}%</td>
       <td *ngIf='!score && score !== 0'>N/A</td>
     </tr>
     <tr class='social-container'>
-      <td><a>Resource</a></td>
-      <td><a>Quiz</a></td>
+      <td><a class="link" href="http://www.heart.org/HEARTORG/Conditions/HighBloodPressure/GettheFactsAboutHighBloodPressure/All-About-Heart-Rate-Pulse_UCM_438850_Article.jsp"
+             target="_blank">All About Heart Rate</a></td>
+      <td><a class="btn btn-primary">Take the Quiz</a></td>
       <td>100%</td>
     </tr>
     <tr class='social-container'>
-      <td><a>Resource</a></td>
-      <td><a>Quiz</a></td>
+      <td><a class="link" href="http://www.heart.org/HEARTORG/HealthyLiving/HealthyEating/Nutrition/The-American-Heart-Associations-Diet-and-Lifestyle-Recommendations_UCM_305855_Article.jsp"
+             target="_blank">The American Heart Association's Diet and Lifestyle Recommendations</a></td>
+      <td><a class="btn btn-primary">Take the Quiz</a></td>
       <td>100%</td>
     </tr>
     <tr class='social-container'>
-      <td><a>Resource</a></td>
-      <td><a>Quiz</a></td>
+      <td><a class="link" href="https://www.everydayhealth.com/news/9-amazing-facts-about-your-heart/" target="_blank">
+        10 Amazing Facts About Your Heart</a></td>
+      <td><a class="btn btn-primary">Take the Quiz</a></td>
       <td>87.5%</td>
     </tr>
     <tr class='social-container'>
-      <td><a>Resource</a></td>
-      <td><a>Quiz</a></td>
+      <td><a class="link" href="https://www.health.harvard.edu/topics/heart-health" target="_blank">Heart Health</a></td>
+      <td><a class="btn btn-primary">Take the Quiz</a></td>
       <td>75%</td>
     </tr>
   </table>
+  </div>
 </div>
