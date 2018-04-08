@@ -27,32 +27,26 @@ export class QuizPageComponent implements OnInit {
   }
 
   finishQuiz() {
-    this.correctAnswers = 8;
-    if (this.q1 != 2) {
+    this.correctAnswers = 6;
+    if (this.q1 != 1) {
       this.correctAnswers--;
     }
-    if (this.q2 != 2) {
+    if (this.q2 != 3) {
       this.correctAnswers--;
     }
     if (this.q3 != 2) {
       this.correctAnswers--;
     }
-    if (this.q4 != 2) {
+    if (this.q4 != 1) {
       this.correctAnswers--;
     }
-    if (this.q5 != 2) {
+    if (this.q5 != 4) {
       this.correctAnswers--;
     }
     if (this.q6 != 2) {
       this.correctAnswers--;
     }
-    if (this.q7 != 2) {
-      this.correctAnswers--;
-    }
-    if (this.q8 != 2) {
-      this.correctAnswers--;
-    }
-    this.score = 100 * (this.correctAnswers / 8);
+    this.score = 100 * (this.correctAnswers / 6);
     confirm('You scored ' + this.score + '% on this quiz! Would you like to share this information?');
     this.quizScore.setScore(this.score);
     this.router.navigate(['/app-home-page']);

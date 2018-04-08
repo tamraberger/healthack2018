@@ -1,94 +1,70 @@
 <div class="box-border nav-spacing">
+  <div class="social-container">
     <div class="form-container">
-        <h1>Health Quiz</h1>
-          <h3 for="questionTwo">How big are two hearts?</h3>
-              <input type="radio" name="qOne" [(ngModel)]="this.q1" value=1> What?
+        <h1>Blood Pressure Quiz</h1>
+        <br>
+          <h3 for="questionTwo">What is considered a normal range for blood pressure?</h3>
+              <input type="radio" name="qOne" [(ngModel)]="this.q1" value=1> Systolic less than 120mmHg and Diastolic less than 80mmHg
               <br>
-              <input type="radio" name="qOne" [(ngModel)]="this.q1" value=2> Uh, twice the last answer?
+              <input type="radio" name="qOne" [(ngModel)]="this.q1" value=2> Systolic 120-129mmHg and Diastolic less than 80mmHg
               <br>
-              <input type="radio" name="qOne" [(ngModel)]="this.q1" value=3> I'm done
+              <input type="radio" name="qOne" [(ngModel)]="this.q1" value=3> Systolic 130-139mmHg and Diastolic 80-89mmHg
               <br>
-              <input type="radio" name="qOne" [(ngModel)]="this.q1" value=4> I'm done
+              <input type="radio" name="qOne" [(ngModel)]="this.q1" value=4> Systolic 140mmHg or higher and Diastolic 90mmHg or higher
               <br>
           <div class="form-group">
-              <h3 for="questionTwo">How big are two hearts?</h3>
-              <input type="radio" name="qTwo" [(ngModel)]="this.q2" value=1> What?
+              <h3 for="questionTwo">What is systolic blood pressure?</h3>
+              <input type="radio" name="qTwo" [(ngModel)]="this.q2" value=1> Indicates how much pressure your blood is exerting against your artery walls when the heart beats (lower number)
               <br>
-              <input type="radio" name="qTwo" [(ngModel)]="this.q2" value=2> Uh, twice the last answer?
+              <input type="radio" name="qTwo" [(ngModel)]="this.q2" value=2> Indicates how fast your blood is moving through your arteries when the heart beats (upper number)
               <br>
-              <input type="radio" name="qTwo" [(ngModel)]="this.q2" value=3> I'm done
+              <input type="radio" name="qTwo" [(ngModel)]="this.q2" value=3> Indicates how much pressure your blood is exerting against your artery walls when the heart beats (upper number)
               <br>
-              <input type="radio" name="qTwo" [(ngModel)]="this.q2" value=4> I'm done
+              <input type="radio" name="qTwo" [(ngModel)]="this.q2" value=4> Indicates how fast your blood is moving through your arteries when the heart beats (lower number)
               <br>
           </div>
           <div class="form-group">
-              <h3 for="questionThree">How big are four hearts?</h3>
-              <input type="radio" name="qThree" [(ngModel)]="this.q3" value=1> What?
+              <h3 for="questionThree">What is diastolic blood pressure?</h3>
+              <input type="radio" name="qThree" [(ngModel)]="this.q3" value=1> Indicates how much pressure your blood is exerting against your artery walls while the heart is resting between beats (upper number)
               <br>
-              <input type="radio" name="qThree" [(ngModel)]="this.q3" value=2> Uh, twice the last answer?
+              <input type="radio" name="qThree" [(ngModel)]="this.q3" value=2> Indicates how much pressure your blood is exerting against your artery walls while the heart is resting between beats (lower number)
               <br>
-              <input type="radio" name="qThree" [(ngModel)]="this.q3" value=3> I'm done
+              <input type="radio" name="qThree" [(ngModel)]="this.q3" value=3> Indicates how fast your blood is moving through your arteries while the heart is resting between beats (lower number)
               <br>
-              <input type="radio" name="qThree" [(ngModel)]="this.q3" value=4> I'm done
-              <br>
-          </div>
-          <div class="form-group">
-              <h3 for="questionFour">How big are eight hearts?</h3>
-              <input type="radio" name="qFour" [(ngModel)]="this.q4" value=1> What?
-              <br>
-              <input type="radio" name="qFour" [(ngModel)]="this.q4" value=2> Uh, twice the last answer?
-              <br>
-              <input type="radio" name="qFour" [(ngModel)]="this.q4" value=3> I'm done
-              <br>
-              <input type="radio" name="qFour" [(ngModel)]="this.q4" value=4> I'm done
+              <input type="radio" name="qThree" [(ngModel)]="this.q3" value=4> Indicates how fast your blood is moving through your arteries while the heart is resting between beats (upper number)
               <br>
           </div>
           <div class="form-group">
-              <h3 for="questionFive">How big are sixteen hearts?</h3>
-              <input type="radio" name="qFive" [(ngModel)]="this.q5" value=1> What?
+              <h3 for="questionFour">Which number is more important?</h3>
+              <input type="radio" name="qFour" [(ngModel)]="this.q4" value=1> Systolic blood pressure
               <br>
-              <input type="radio" name="qFive" [(ngModel)]="this.q5" value=2> Uh, twice the last answer?
+              <input type="radio" name="qFour" [(ngModel)]="this.q4" value=2> Diastolic blood pressure
               <br>
-              <input type="radio" name="qFive" [(ngModel)]="this.q5" value=3> I'm done
+              <input type="radio" name="qFour" [(ngModel)]="this.q4" value=3> Total blood pressure
               <br>
-              <input type="radio" name="qFive" [(ngModel)]="this.q5" value=4> I'm done
-              <br>
-          </div>
-          <div class="form-group">
-              <h3 for="questionSix">How big are thirty-two hearts?</h3>
-              <input type="radio" name="qSix" [(ngModel)]="this.q6" value=1> What?
-              <br>
-              <input type="radio" name="qSix" [(ngModel)]="this.q6" value=2> Uh, twice the last answer?
-              <br>
-              <input type="radio" name="qSix" [(ngModel)]="this.q6" value=3> I'm done
-              <br>
-              <input type="radio" name="qSix" [(ngModel)]="this.q6" value=4> I'm done
+              <input type="radio" name="qFour" [(ngModel)]="this.q4" value=4> They are equally important
               <br>
           </div>
           <div class="form-group">
-              <h3 for="questionSeven">How big are sixty-four hearts?</h3>
-              <input type="radio" name="qSeven" [(ngModel)]="this.q7" value=1> What?
+              <h3 for="questionFive">Why is blood pressure measured in millimeters of mercury?</h3>
+              <input type="radio" name="qFive" [(ngModel)]="this.q5" value=1> It is not measured in millimeters of mercury
               <br>
-              <input type="radio" name="qSeven" [(ngModel)]="this.q7" value=2> Uh, twice the last answer?
+              <input type="radio" name="qFive" [(ngModel)]="this.q5" value=2> Mercury was used initially to measure distance and is still used as the standard unit of measurement for distance in medicine
               <br>
-              <input type="radio" name="qSeven" [(ngModel)]="this.q7" value=3> I'm done
+              <input type="radio" name="qFive" [(ngModel)]="this.q5" value=3> Mercury was used in the first accurate temperature gauges and is still used as the standard unit of measurement for temperature in medicine
               <br>
-              <input type="radio" name="qSeven" [(ngModel)]="this.q7" value=4> I'm done
+              <input type="radio" name="qFive" [(ngModel)]="this.q5" value=4> Mercury was used in the first accurate pressure gauges and is still used as the standard unit of measurement for pressure in medicine
               <br>
           </div>
           <div class="form-group">
-              <h3 for="questionEight">How big are one hundred twenty-eight hearts?</h3>
-              <input type="radio" name="qEight" [(ngModel)]="this.q8" value=1> What?
+              <h3 for="questionSix">Taking your pulse and checking your blood pressure are the same thing.</h3>
+              <input type="radio" name="qSix" [(ngModel)]="this.q6" value=1> True
               <br>
-              <input type="radio" name="qEight" [(ngModel)]="this.q8" value=2> Uh, twice the last answer?
-              <br>
-              <input type="radio" name="qEight" [(ngModel)]="this.q8" value=3> I'm done
-              <br>
-              <input type="radio" name="qEight" [(ngModel)]="this.q8" value=4> I'm done
-              <br>
+              <input type="radio" name="qSix" [(ngModel)]="this.q6" value=2> False
           </div>
           <div class="form-group">
             <button type="submit" class="btn btn-success" (click)='finishQuiz()'>Submit</button>
           </div>
     </div>
+  </div>
 </div>
