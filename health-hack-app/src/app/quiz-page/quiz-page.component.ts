@@ -63,7 +63,7 @@ export class QuizPageComponent implements OnInit {
     this.notifications.addNotification({
       img: '<img class="post-img" src="./assets/illness.png">',
       time: '<p class="post-date">' + time + '</p>',
-      html: '<a href="http://localhost:4200/app-all-learning-page" class="post-message">Potential Flu Outbreak! Learn More By Clicking Here</a>'
+      html: '<a href="http://localhost:4200/app-illness-learning-page" class="post-message">Potential Flu Outbreak! Learn More By Clicking Here</a>'
     });
     if (confirm('You scored ' + this.score +
       '% on this quiz! You also won ' + this.addedPoints +
