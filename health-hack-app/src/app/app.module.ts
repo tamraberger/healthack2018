@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { FriendsComponent } from './friends/friends.component';
 import { FamilyComponent } from './family/family.component';
 import { QuizScore } from './services/quiz.service';
+import { PersonalScore } from './services/score.service';
 import { Notifications } from './services/notifications.service';
 
 const appRoutes: Routes = [
@@ -60,7 +61,7 @@ const appRoutes: Routes = [
     FormsModule,
     HttpClientModule
   ],
-  providers: [QuizScore, Notifications],
+  providers: [QuizScore, Notifications, PersonalScore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

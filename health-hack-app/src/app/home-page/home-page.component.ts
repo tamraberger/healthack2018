@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { QuizScore } from '../services/quiz.service';
 import { Notifications } from '../services/notifications.service';
+import { PersonalScore } from '../services/score.service';
 
 @Component({
   selector: 'app-home-page',
@@ -11,9 +11,11 @@ import { Notifications } from '../services/notifications.service';
 export class HomePageComponent implements OnInit {
 
   newsItems: {}[];
+  shownScore: number;
 
-  constructor(private notifications: Notifications) {
+  constructor(private notifications: Notifications, private score: PersonalScore) {
     this.newsItems = notifications.getNotifications();
+    this.shownScore = score.getScore();
    }
 
   ngOnInit() {
