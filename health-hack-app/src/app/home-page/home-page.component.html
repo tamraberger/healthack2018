@@ -46,7 +46,16 @@
     <h1>News Feed</h1>
     <div class="news-feed">
     <br>
-      <div class="social-container feed-item">
+      <div *ngFor='let item of newsItems'>
+        <div class="social-container feed-item">
+          <div class="leader-image" [innerHTML]='item.img'></div>
+          <div class="post-content">
+            <div [innerHTML]='item.time'></div>
+            <div [innerHTML]='item.html'></div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="social-container feed-item">
         <div class="leader-image">
           <img class="post-img" src="./assets/meep.jpg">
         </div>
@@ -72,7 +81,7 @@
           <p class="post-date">10:31 March 31, 2018</p>
           <p class="post-message">Meep Berger completed some learning!</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

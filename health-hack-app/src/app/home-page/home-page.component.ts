@@ -10,7 +10,11 @@ import { Notifications } from '../services/notifications.service';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor() { }
+  newsItems: {}[];
+
+  constructor(private notifications: Notifications) {
+    this.newsItems = notifications.getNotifications();
+   }
 
   ngOnInit() {
   }
