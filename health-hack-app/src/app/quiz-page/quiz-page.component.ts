@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 import { QuizScore } from '../services/quiz.service';
 import { Notifications } from '../services/notifications.service';
 
@@ -21,7 +22,8 @@ export class QuizPageComponent implements OnInit {
   q7: number;
   q8: number;
 
-  constructor(private router: Router, private quizScore: QuizScore) { this.quizScore = quizScore; }
+  constructor(private router: Router, private quizScore: QuizScore, private http: HttpClient) { this.quizScore = quizScore;
+  this.http = http; }
 
   ngOnInit() {
   }
@@ -49,6 +51,9 @@ export class QuizPageComponent implements OnInit {
     this.score = Math.round(100 * (this.correctAnswers / 6));
     confirm('You scored ' + this.score + '% on this quiz! Would you like to share this information?');
     this.quizScore.setScore(this.score);
+
+    this.http.get('/send').subscribe(data => {});
+
     this.router.navigate(['/app-specific-learning-page']);
   }
 
